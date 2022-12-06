@@ -8,11 +8,15 @@ import { AddComponent } from './add/add.component';
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-//import { ViewComponent } from './view/view.component';
+import { ViewComponent } from './view/view.component';
 const myRoute:Routes=[
   {
     path:"",
     component:AddComponent
+  },
+  {
+    path:"view",
+    component:ViewComponent
   }
  
 ]
@@ -20,7 +24,8 @@ const myRoute:Routes=[
   declarations: [
     AppComponent,
     NavbarComponent,
-    AddComponent
+    AddComponent,
+    ViewComponent
     //ViewComponent
   ],
   imports: [
