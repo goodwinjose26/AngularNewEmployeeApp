@@ -27,6 +27,15 @@ export class AddComponent {
       (response:any)=>
       {
         console.log(response)
+        if(response.status=="success")
+        {
+          alert("added")
+          this.cmpname="",this.designation="",this.empcode="",this.mobno="",this.password="",this.username="",this.salary="",this.name=""
+        }
+        else
+        {
+          alert("error")
+        }
       }
     )
   }
