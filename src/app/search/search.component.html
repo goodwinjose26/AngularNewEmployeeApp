@@ -1,0 +1,42 @@
+<app-navbar></app-navbar>
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-4">
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">EMPLOYEE CODE</label>
+                    <input name="empcode" [(ngModel)]="empcode"  type="text" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <button (click)="readValue()" class="btn btn-success">SUBMIT</button>
+                </div>
+            </div>
+            <div class="row g-3"  *ngFor="let j of sdata">
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">NAME</label>
+                    <input type="text" class="form-control" value="{{j.name}}">
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">DESIGNATION</label>
+                    <input type="text" class="form-control" value="{{j.designation}}">
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">SALARY</label>
+                    <input type="text" class="form-control" value="{{j.salary}}">
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">company name</label>
+                    <input type="text" class="form-control" value="{{j.cmpname}}">
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">MOBILE NO</label>
+                    <input type="text" class="form-control" value="{{j.mobno}}">
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">USERNAME</label>
+                    <input type="text" class="form-control" value="{{j.username}}">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
